@@ -1,0 +1,40 @@
+buildscript {
+  ext {
+    springBootVersion = '1.5.12.RELEASE'
+  }
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+  }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+
+group = 'de.gesellix'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile('org.springframework.boot:spring-boot-starter')
+  testCompile('org.springframework.boot:spring-boot-starter-test')
+
+  compile("org.ektorp:org.ektorp:1.5.0")
+  compile("org.ektorp:org.ektorp.spring:1.5.0")
+  //
+  compile("org.apache.httpcomponents:httpclient-cache:4.4")
+
+  compile "com.fasterxml.jackson.datatype:jackson-datatype-joda:2.8.10"
+  compile "joda-time:joda-time:2.9.9"
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '4.7'
+  distributionType = Wrapper.DistributionType.ALL
+}
