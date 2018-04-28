@@ -12,7 +12,7 @@ public class Demo {
     new Demo().doIt(args);
   }
 
-  void doIt(String[] args) throws Exception {
+  public void doIt(String[] args) throws Exception {
     String tag = args == null || args.length == 0 ? "name" : args[0];
 
     CouchDbRepository db = getCouchDbRepository("http://localhost:5984", tag);
