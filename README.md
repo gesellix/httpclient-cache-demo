@@ -2,6 +2,8 @@
 
 Demonstrates a misbehaviour in the [Apache HttpClient Cache library](https://hc.apache.org/httpcomponents-client-ga/httpclient-cache/project-info.html).
 
+Expects a CouchDB to be running at `http://localhost:5984/`.
+
 ````
 ./gradlew :httpclient-cache-4-3:performDemo
 
