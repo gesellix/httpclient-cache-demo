@@ -1,0 +1,222 @@
+17:51:58.184 [main] DEBUG org.apache.http.impl.client.cache.CachingHttpClient - Cache miss
+17:51:58.216 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection request: [route: {}->http://localhost:5984][total kept alive: 0; route allocated: 0 of 20; total allocated: 0 of 20]
+17:51:58.223 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:5984][total kept alive: 0; route allocated: 1 of 20; total allocated: 1 of 20]
+17:51:58.232 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to localhost:5984
+17:51:58.251 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+17:51:58.252 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+17:51:58.252 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+17:51:58.253 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+17:51:58.253 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+17:51:58.253 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: HEAD /db-def/ HTTP/1.1
+17:51:58.254 [main] DEBUG org.apache.http.wire -  >> "HEAD /db-def/ HTTP/1.1[\r][\n]"
+17:51:58.255 [main] DEBUG org.apache.http.wire -  >> "Via: 1.1 localhost (Apache-HttpClient/4.4 (cache))[\r][\n]"
+17:51:58.255 [main] DEBUG org.apache.http.wire -  >> "Host: localhost:5984[\r][\n]"
+17:51:58.255 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+17:51:58.255 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+17:51:58.256 [main] DEBUG org.apache.http.headers - >> HEAD /db-def/ HTTP/1.1
+17:51:58.256 [main] DEBUG org.apache.http.headers - >> Via: 1.1 localhost (Apache-HttpClient/4.4 (cache))
+17:51:58.256 [main] DEBUG org.apache.http.headers - >> Host: localhost:5984
+17:51:58.256 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+17:51:58.260 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+17:51:58.262 [main] DEBUG org.apache.http.wire -  << "Server: CouchDB/1.7.1 (Erlang OTP/17)[\r][\n]"
+17:51:58.263 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 28 Apr 2018 15:51:59 GMT[\r][\n]"
+17:51:58.263 [main] DEBUG org.apache.http.wire -  << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+17:51:58.263 [main] DEBUG org.apache.http.wire -  << "Content-Length: 234[\r][\n]"
+17:51:58.263 [main] DEBUG org.apache.http.wire -  << "Cache-Control: must-revalidate[\r][\n]"
+17:51:58.263 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+17:51:58.264 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+17:51:58.264 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+17:51:58.264 [main] DEBUG org.apache.http.headers - << Server: CouchDB/1.7.1 (Erlang OTP/17)
+17:51:58.264 [main] DEBUG org.apache.http.headers - << Date: Sat, 28 Apr 2018 15:51:59 GMT
+17:51:58.264 [main] DEBUG org.apache.http.headers - << Content-Type: text/plain; charset=utf-8
+17:51:58.264 [main] DEBUG org.apache.http.headers - << Content-Length: 234
+17:51:58.264 [main] DEBUG org.apache.http.headers - << Cache-Control: must-revalidate
+17:51:58.267 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+17:51:58.268 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection [id: 0][route: {}->http://localhost:5984] can be kept alive indefinitely
+17:51:58.269 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:5984][total kept alive: 1; route allocated: 1 of 20; total allocated: 1 of 20]
+17:51:58.291 [main] DEBUG org.apache.http.impl.client.cache.CachingHttpClient - Revalidating cache entry
+17:51:58.292 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection request: [route: {}->http://localhost:5984][total kept alive: 1; route allocated: 1 of 20; total allocated: 1 of 20]
+17:51:58.292 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:5984][total kept alive: 0; route allocated: 1 of 20; total allocated: 1 of 20]
+17:51:58.292 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+17:51:58.294 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+17:51:58.294 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+17:51:58.294 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+17:51:58.295 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+17:51:58.295 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+17:51:58.295 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: HEAD /db-def/ HTTP/1.1
+17:51:58.295 [main] DEBUG org.apache.http.wire -  >> "HEAD /db-def/ HTTP/1.1[\r][\n]"
+17:51:58.295 [main] DEBUG org.apache.http.wire -  >> "Via: 1.1 localhost (Apache-HttpClient/4.4 (cache))[\r][\n]"
+17:51:58.295 [main] DEBUG org.apache.http.wire -  >> "Cache-Control: max-age=0[\r][\n]"
+17:51:58.295 [main] DEBUG org.apache.http.wire -  >> "Host: localhost:5984[\r][\n]"
+17:51:58.295 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+17:51:58.295 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+17:51:58.295 [main] DEBUG org.apache.http.headers - >> HEAD /db-def/ HTTP/1.1
+17:51:58.295 [main] DEBUG org.apache.http.headers - >> Via: 1.1 localhost (Apache-HttpClient/4.4 (cache))
+17:51:58.295 [main] DEBUG org.apache.http.headers - >> Cache-Control: max-age=0
+17:51:58.295 [main] DEBUG org.apache.http.headers - >> Host: localhost:5984
+17:51:58.295 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+17:51:58.298 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+17:51:58.299 [main] DEBUG org.apache.http.wire -  << "Server: CouchDB/1.7.1 (Erlang OTP/17)[\r][\n]"
+17:51:58.299 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 28 Apr 2018 15:52:00 GMT[\r][\n]"
+17:51:58.299 [main] DEBUG org.apache.http.wire -  << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+17:51:58.299 [main] DEBUG org.apache.http.wire -  << "Content-Length: 234[\r][\n]"
+17:51:58.299 [main] DEBUG org.apache.http.wire -  << "Cache-Control: must-revalidate[\r][\n]"
+17:51:58.299 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+17:51:58.299 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+17:51:58.299 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+17:51:58.299 [main] DEBUG org.apache.http.headers - << Server: CouchDB/1.7.1 (Erlang OTP/17)
+17:51:58.299 [main] DEBUG org.apache.http.headers - << Date: Sat, 28 Apr 2018 15:52:00 GMT
+17:51:58.299 [main] DEBUG org.apache.http.headers - << Content-Type: text/plain; charset=utf-8
+17:51:58.299 [main] DEBUG org.apache.http.headers - << Content-Length: 234
+17:51:58.299 [main] DEBUG org.apache.http.headers - << Cache-Control: must-revalidate
+17:51:58.299 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+17:51:58.299 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection [id: 0][route: {}->http://localhost:5984] can be kept alive indefinitely
+17:51:58.300 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:5984][total kept alive: 1; route allocated: 1 of 20; total allocated: 1 of 20]
+17:51:58.353 [main] DEBUG org.ektorp.impl.StreamingJsonSerializer - {}
+17:51:58.357 [main] DEBUG org.apache.http.impl.client.cache.CacheInvalidator - Invalidating parent cache entry: [request date=Sat Apr 28 17:51:58 CEST 2018; response date=Sat Apr 28 17:51:58 CEST 2018; statusLine=HTTP/1.1 200 OK]
+17:51:58.358 [main] DEBUG org.apache.http.impl.client.cache.CachingHttpClient - Request is not servable from cache
+17:51:58.358 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection request: [route: {}->http://localhost:5984][total kept alive: 1; route allocated: 1 of 20; total allocated: 1 of 20]
+17:51:58.358 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:5984][total kept alive: 0; route allocated: 1 of 20; total allocated: 1 of 20]
+17:51:58.358 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+17:51:58.360 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+17:51:58.360 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+17:51:58.360 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+17:51:58.360 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+17:51:58.360 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+17:51:58.360 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: POST /db-def/ HTTP/1.1
+17:51:58.362 [main] DEBUG org.apache.http.wire -  >> "POST /db-def/ HTTP/1.1[\r][\n]"
+17:51:58.362 [main] DEBUG org.apache.http.wire -  >> "Via: 1.1 localhost (Apache-HttpClient/4.4 (cache))[\r][\n]"
+17:51:58.362 [main] DEBUG org.apache.http.wire -  >> "Content-Length: 2[\r][\n]"
+17:51:58.362 [main] DEBUG org.apache.http.wire -  >> "Content-Type: application/json[\r][\n]"
+17:51:58.362 [main] DEBUG org.apache.http.wire -  >> "Host: localhost:5984[\r][\n]"
+17:51:58.362 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+17:51:58.362 [main] DEBUG org.apache.http.wire -  >> "Expect: 100-continue[\r][\n]"
+17:51:58.363 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+17:51:58.363 [main] DEBUG org.apache.http.headers - >> POST /db-def/ HTTP/1.1
+17:51:58.363 [main] DEBUG org.apache.http.headers - >> Via: 1.1 localhost (Apache-HttpClient/4.4 (cache))
+17:51:58.363 [main] DEBUG org.apache.http.headers - >> Content-Length: 2
+17:51:58.363 [main] DEBUG org.apache.http.headers - >> Content-Type: application/json
+17:51:58.363 [main] DEBUG org.apache.http.headers - >> Host: localhost:5984
+17:51:58.363 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+17:51:58.363 [main] DEBUG org.apache.http.headers - >> Expect: 100-continue
+17:51:58.364 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 100 Continue[\r][\n]"
+17:51:58.364 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+17:51:58.364 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 100 Continue
+17:51:58.364 [main] DEBUG org.apache.http.headers - << HTTP/1.1 100 Continue
+17:51:58.365 [main] DEBUG org.apache.http.wire -  >> "{}"
+17:51:58.367 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 201 Created[\r][\n]"
+17:51:58.368 [main] DEBUG org.apache.http.wire -  << "Server: CouchDB/1.7.1 (Erlang OTP/17)[\r][\n]"
+17:51:58.368 [main] DEBUG org.apache.http.wire -  << "Location: http://localhost:5984/db-def/f231e16d0b5958640dfac5059000a947[\r][\n]"
+17:51:58.368 [main] DEBUG org.apache.http.wire -  << "ETag: "1-967a00dff5e02add41819138abb3284d"[\r][\n]"
+17:51:58.368 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 28 Apr 2018 15:52:00 GMT[\r][\n]"
+17:51:58.368 [main] DEBUG org.apache.http.wire -  << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+17:51:58.368 [main] DEBUG org.apache.http.wire -  << "Content-Length: 95[\r][\n]"
+17:51:58.368 [main] DEBUG org.apache.http.wire -  << "Cache-Control: must-revalidate[\r][\n]"
+17:51:58.368 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+17:51:58.368 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 201 Created
+17:51:58.368 [main] DEBUG org.apache.http.headers - << HTTP/1.1 201 Created
+17:51:58.368 [main] DEBUG org.apache.http.headers - << Server: CouchDB/1.7.1 (Erlang OTP/17)
+17:51:58.368 [main] DEBUG org.apache.http.headers - << Location: http://localhost:5984/db-def/f231e16d0b5958640dfac5059000a947
+17:51:58.368 [main] DEBUG org.apache.http.headers - << ETag: "1-967a00dff5e02add41819138abb3284d"
+17:51:58.368 [main] DEBUG org.apache.http.headers - << Date: Sat, 28 Apr 2018 15:52:00 GMT
+17:51:58.368 [main] DEBUG org.apache.http.headers - << Content-Type: text/plain; charset=utf-8
+17:51:58.368 [main] DEBUG org.apache.http.headers - << Content-Length: 95
+17:51:58.368 [main] DEBUG org.apache.http.headers - << Cache-Control: must-revalidate
+17:51:58.369 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+17:51:58.372 [main] DEBUG org.apache.http.impl.client.cache.ResponseCachingPolicy - Response was not cacheable.
+17:51:58.376 [main] DEBUG org.apache.http.wire -  << "{"ok":true,"id":"f231e16d0b5958640dfac5059000a947","rev":"1-967a00dff5e02add41819138abb3284d"}[\n]"
+17:51:58.397 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection [id: 0][route: {}->http://localhost:5984] can be kept alive indefinitely
+17:51:58.397 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:5984][total kept alive: 1; route allocated: 1 of 20; total allocated: 1 of 20]
+17:51:58.398 [main] DEBUG org.apache.http.impl.client.cache.CachingHttpClient - Cache miss
+17:51:58.399 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection request: [route: {}->http://localhost:5984][total kept alive: 1; route allocated: 1 of 20; total allocated: 1 of 20]
+17:51:58.399 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:5984][total kept alive: 0; route allocated: 1 of 20; total allocated: 1 of 20]
+17:51:58.399 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+17:51:58.400 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+17:51:58.400 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+17:51:58.401 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+17:51:58.401 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+17:51:58.401 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+17:51:58.401 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: HEAD /db-def/f231e16d0b5958640dfac5059000a947 HTTP/1.1
+17:51:58.401 [main] DEBUG org.apache.http.wire -  >> "HEAD /db-def/f231e16d0b5958640dfac5059000a947 HTTP/1.1[\r][\n]"
+17:51:58.401 [main] DEBUG org.apache.http.wire -  >> "Via: 1.1 localhost (Apache-HttpClient/4.4 (cache))[\r][\n]"
+17:51:58.401 [main] DEBUG org.apache.http.wire -  >> "Host: localhost:5984[\r][\n]"
+17:51:58.401 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+17:51:58.401 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+17:51:58.401 [main] DEBUG org.apache.http.headers - >> HEAD /db-def/f231e16d0b5958640dfac5059000a947 HTTP/1.1
+17:51:58.401 [main] DEBUG org.apache.http.headers - >> Via: 1.1 localhost (Apache-HttpClient/4.4 (cache))
+17:51:58.401 [main] DEBUG org.apache.http.headers - >> Host: localhost:5984
+17:51:58.401 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+17:51:58.405 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+17:51:58.405 [main] DEBUG org.apache.http.wire -  << "Server: CouchDB/1.7.1 (Erlang OTP/17)[\r][\n]"
+17:51:58.405 [main] DEBUG org.apache.http.wire -  << "ETag: "1-967a00dff5e02add41819138abb3284d"[\r][\n]"
+17:51:58.405 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 28 Apr 2018 15:52:00 GMT[\r][\n]"
+17:51:58.405 [main] DEBUG org.apache.http.wire -  << "Content-Type: text/plain; charset=utf-8[\r][\n]"
+17:51:58.405 [main] DEBUG org.apache.http.wire -  << "Content-Length: 87[\r][\n]"
+17:51:58.405 [main] DEBUG org.apache.http.wire -  << "Cache-Control: must-revalidate[\r][\n]"
+17:51:58.405 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+17:51:58.405 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+17:51:58.405 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+17:51:58.405 [main] DEBUG org.apache.http.headers - << Server: CouchDB/1.7.1 (Erlang OTP/17)
+17:51:58.405 [main] DEBUG org.apache.http.headers - << ETag: "1-967a00dff5e02add41819138abb3284d"
+17:51:58.405 [main] DEBUG org.apache.http.headers - << Date: Sat, 28 Apr 2018 15:52:00 GMT
+17:51:58.405 [main] DEBUG org.apache.http.headers - << Content-Type: text/plain; charset=utf-8
+17:51:58.405 [main] DEBUG org.apache.http.headers - << Content-Length: 87
+17:51:58.405 [main] DEBUG org.apache.http.headers - << Cache-Control: must-revalidate
+17:51:58.406 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+17:51:58.406 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection [id: 0][route: {}->http://localhost:5984] can be kept alive indefinitely
+17:51:58.406 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:5984][total kept alive: 1; route allocated: 1 of 20; total allocated: 1 of 20]
+17:51:58.409 [main] DEBUG org.apache.http.impl.client.cache.CachingHttpClient - Revalidating cache entry
+17:51:58.409 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection request: [route: {}->http://localhost:5984][total kept alive: 1; route allocated: 1 of 20; total allocated: 1 of 20]
+17:51:58.410 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection leased: [id: 0][route: {}->http://localhost:5984][total kept alive: 0; route allocated: 1 of 20; total allocated: 1 of 20]
+17:51:58.410 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Stale connection check
+17:51:58.411 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+17:51:58.411 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+17:51:58.411 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+17:51:58.411 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+17:51:58.411 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+17:51:58.411 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /db-def/f231e16d0b5958640dfac5059000a947 HTTP/1.1
+17:51:58.411 [main] DEBUG org.apache.http.wire -  >> "GET /db-def/f231e16d0b5958640dfac5059000a947 HTTP/1.1[\r][\n]"
+17:51:58.411 [main] DEBUG org.apache.http.wire -  >> "Via: 1.1 localhost (Apache-HttpClient/4.4 (cache))[\r][\n]"
+17:51:58.412 [main] DEBUG org.apache.http.wire -  >> "If-None-Match: "1-967a00dff5e02add41819138abb3284d"[\r][\n]"
+17:51:58.412 [main] DEBUG org.apache.http.wire -  >> "Cache-Control: max-age=0[\r][\n]"
+17:51:58.412 [main] DEBUG org.apache.http.wire -  >> "Host: localhost:5984[\r][\n]"
+17:51:58.412 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+17:51:58.412 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+17:51:58.412 [main] DEBUG org.apache.http.headers - >> GET /db-def/f231e16d0b5958640dfac5059000a947 HTTP/1.1
+17:51:58.412 [main] DEBUG org.apache.http.headers - >> Via: 1.1 localhost (Apache-HttpClient/4.4 (cache))
+17:51:58.412 [main] DEBUG org.apache.http.headers - >> If-None-Match: "1-967a00dff5e02add41819138abb3284d"
+17:51:58.412 [main] DEBUG org.apache.http.headers - >> Cache-Control: max-age=0
+17:51:58.412 [main] DEBUG org.apache.http.headers - >> Host: localhost:5984
+17:51:58.412 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+17:51:58.417 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 304 Not Modified[\r][\n]"
+17:51:58.417 [main] DEBUG org.apache.http.wire -  << "Server: CouchDB/1.7.1 (Erlang OTP/17)[\r][\n]"
+17:51:58.417 [main] DEBUG org.apache.http.wire -  << "ETag: "1-967a00dff5e02add41819138abb3284d"[\r][\n]"
+17:51:58.417 [main] DEBUG org.apache.http.wire -  << "Date: Sat, 28 Apr 2018 15:52:00 GMT[\r][\n]"
+17:51:58.417 [main] DEBUG org.apache.http.wire -  << "Content-Length: 0[\r][\n]"
+17:51:58.417 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+17:51:58.417 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 304 Not Modified
+17:51:58.417 [main] DEBUG org.apache.http.headers - << HTTP/1.1 304 Not Modified
+17:51:58.417 [main] DEBUG org.apache.http.headers - << Server: CouchDB/1.7.1 (Erlang OTP/17)
+17:51:58.417 [main] DEBUG org.apache.http.headers - << ETag: "1-967a00dff5e02add41819138abb3284d"
+17:51:58.417 [main] DEBUG org.apache.http.headers - << Date: Sat, 28 Apr 2018 15:52:00 GMT
+17:51:58.417 [main] DEBUG org.apache.http.headers - << Content-Length: 0
+17:51:58.418 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+17:51:58.418 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection [id: 0][route: {}->http://localhost:5984] can be kept alive indefinitely
+17:51:58.418 [main] DEBUG org.apache.http.impl.conn.PoolingClientConnectionManager - Connection released: [id: 0][route: {}->http://localhost:5984][total kept alive: 1; route allocated: 1 of 20; total allocated: 1 of 20]
+Exception in thread "main" java.lang.NullPointerException
+        at java.io.FilterInputStream.read(FilterInputStream.java:133)
+        at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.ensureLoaded(ByteSourceJsonBootstrapper.java:489)
+        at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.detectEncoding(ByteSourceJsonBootstrapper.java:126)
+        at com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper.constructParser(ByteSourceJsonBootstrapper.java:215)
+        at com.fasterxml.jackson.core.JsonFactory._createParser(JsonFactory.java:1240)
+        at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:802)
+        at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2796)
+        at org.ektorp.impl.StdCouchDbConnector$5.success(StdCouchDbConnector.java:244)
+        at org.ektorp.http.RestTemplate.handleResponse(RestTemplate.java:126)
+        at org.ektorp.http.RestTemplate.get(RestTemplate.java:22)
+        at org.ektorp.impl.StdCouchDbConnector.get(StdCouchDbConnector.java:240)
+        at org.ektorp.impl.StdCouchDbConnector.get(StdCouchDbConnector.java:231)
+        at org.ektorp.support.CouchDbRepositorySupport.get(CouchDbRepositorySupport.java:148)
+        at de.gesellix.httpclientcachedemo.Demo.doIt(Demo.java:25)
+        at de.gesellix.httpclientcachedemo.Demo.main(Demo.java:12)
+

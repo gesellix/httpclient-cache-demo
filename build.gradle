@@ -1,34 +1,50 @@
-buildscript {
-  ext {
-    springBootVersion = '1.5.12.RELEASE'
-  }
+subprojects {
+  apply plugin: 'java'
+
+  group = 'de.gesellix'
+  version = 'NONE'
+  sourceCompatibility = 1.8
+
   repositories {
     mavenCentral()
   }
+}
+
+ext {
+  testprojects = []
+}
+
+project(':httpclient-cache-4-3') {
+  testprojects << it
   dependencies {
-    classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    compile("org.apache.httpcomponents:httpclient-cache:4.3")
   }
 }
 
-apply plugin: 'java'
-apply plugin: 'org.springframework.boot'
-
-group = 'de.gesellix'
-version = '0.0.1-SNAPSHOT'
-sourceCompatibility = 1.8
-
-repositories {
-  mavenCentral()
+project(':httpclient-cache-4-4') {
+  testprojects << it
+  dependencies {
+    compile("org.apache.httpcomponents:httpclient-cache:4.4")
+  }
 }
 
-dependencies {
-  compile('org.springframework.boot:spring-boot-starter')
-  testCompile('org.springframework.boot:spring-boot-starter-test')
+project(':httpclient-cache-4-5') {
+  testprojects << it
+  dependencies {
+    compile("org.apache.httpcomponents:httpclient-cache:4.5")
+  }
+}
 
-  compile("org.ektorp:org.ektorp:1.5.0")
-  compile("org.ektorp:org.ektorp.spring:1.5.0")
-  //
-  compile("org.apache.httpcomponents:httpclient-cache:4.4")
+configure(testprojects) { p ->
+  dependencies {
+    compile project(':common')
+  }
+  task performDemo(type: JavaExec) {
+    def clientSourceSets = p.sourceSets
+    classpath = clientSourceSets.main.runtimeClasspath + clientSourceSets.test.runtimeClasspath
+    main = 'de.gesellix.httpclientcachedemo.Demo'
+  }
+//  check.dependsOn performDemo
 }
 
 task wrapper(type: Wrapper) {

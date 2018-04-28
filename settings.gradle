@@ -1,1 +1,6 @@
 rootProject.name = 'httpclient-cache-demo'
+
+include 'common'
+include 'httpclient-cache-4-3'
+include 'httpclient-cache-4-4'
+include 'httpclient-cache-4-5'
