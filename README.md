@@ -2,7 +2,20 @@
 
 Demonstrates a misbehaviour in the [Apache HttpClient Cache library](https://hc.apache.org/httpcomponents-client-ga/httpclient-cache/project-info.html).
 
-Expects a CouchDB to be running at `http://localhost:5984/`.
+A possible fix can be found at [github.com/gesellix/httpcomponents-client//disable-cache-for-null-resource](https://github.com/gesellix/httpcomponents-client/tree/disable-cache-for-null-resource).
+
+## Examples
+
+The following examples use Gradle tasks to perform requests against a running CouchDB instance
+at `http://localhost:5984/`.
+The CouchDB doesn't need any special preparation. An easy way to get it running is the following
+Docker command:
+
+    docker run --rm -it -p 5984:5984 apache/couchdb:1.7.1
+
+If you don't want to run a CouchDB right now, the relevant logs are also provided below.
+
+### httpclient-cache:4.3
 
 ````
 ./gradlew :httpclient-cache-4-3:performDemo
@@ -31,6 +44,8 @@ Expects a CouchDB to be running at `http://localhost:5984/`.
 17:51:50.749 [main] DEBUG org.apache.http.headers - << Cache-Control: must-revalidate
 17:51:50.753 [main] DEBUG org.apache.http.wire -  << "{"_id":"f231e16d0b5958640dfac5059000a0fc","_rev":"1-967a00dff5e02add41819138abb3284d"}[\n]"
 ````
+
+### httpclient-cache:4.4
 
 ````
 ./gradlew :httpclient-cache-4-4:performDemo
@@ -75,6 +90,8 @@ Exception in thread "main" java.lang.NullPointerException
         at de.gesellix.httpclientcachedemo.Demo.doIt(Demo.java:25)
         at de.gesellix.httpclientcachedemo.Demo.main(Demo.java:12)
 ````
+
+### httpclient-cache:4.5
 
 ````
 ./gradlew :httpclient-cache-4-5:performDemo
