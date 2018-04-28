@@ -18,6 +18,8 @@ Example of a downstream library stumbling over the issue is the Java API for Cou
 
 A possible fix can be found at [github.com/gesellix/httpcomponents-client//disable-cache-for-null-resource](https://github.com/gesellix/httpcomponents-client/tree/disable-cache-for-null-resource).
 
+Mailing list entry [@httpclient-users.hc.apache.org](https://lists.apache.org/thread.html/8cb4252482565e0f6d59b097320cfbf572c212508b63e9fc59a2e1b4@%3Chttpclient-users.hc.apache.org%3E).
+
 ## Demo time
 
 The following examples use Gradle tasks to perform requests against a running CouchDB instance
