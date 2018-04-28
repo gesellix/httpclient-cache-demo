@@ -2,9 +2,23 @@
 
 Demonstrates a misbehaviour in the [Apache HttpClient Cache library](https://hc.apache.org/httpcomponents-client-ga/httpclient-cache/project-info.html).
 
+## Cached HEAD requests
+
+The issue seems to be introduced in HttpClient 4.4, by implementing [HTTPCLIENT-1515](https://issues.apache.org/jira/browse/HTTPCLIENT-1515).
+The code has been changed at:
+
+- https://github.com/apache/httpcomponents-client/pull/13
+- https://github.com/apache/httpcomponents-client/commit/0cedb7c8cc8a06819bd8c094071c04a628ab6f57
+
+Example of a downstream library stumbling over the issue is the Java API for CouchDB [Ektorp](https://github.com/helun/Ektorp):
+
+- https://github.com/helun/Ektorp/issues/222
+
+## Proposed fix
+
 A possible fix can be found at [github.com/gesellix/httpcomponents-client//disable-cache-for-null-resource](https://github.com/gesellix/httpcomponents-client/tree/disable-cache-for-null-resource).
 
-## Examples
+## Demo time
 
 The following examples use Gradle tasks to perform requests against a running CouchDB instance
 at `http://localhost:5984/`.
