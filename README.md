@@ -7,7 +7,7 @@ Expects a CouchDB to be running at `http://localhost:5984/`.
 ````
 ./gradlew :httpclient-cache-4-3:performDemo
 
-17:51:50.736 [main] DEBUG org.apache.http.headers - >> HEAD /db-def/f231e16d0b5958640dfac5059000a0fc HTTP/1.1
+17:51:50.736 [main] DEBUG org.apache.http.headers - >> HEAD /db-name/f231e16d0b5958640dfac5059000a0fc HTTP/1.1
 17:51:50.736 [main] DEBUG org.apache.http.headers - >> Via: 1.1 localhost (Apache-HttpClient/4.3 (cache))
 17:51:50.736 [main] DEBUG org.apache.http.headers - >> Host: localhost:5984
 17:51:50.736 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
@@ -18,7 +18,7 @@ Expects a CouchDB to be running at `http://localhost:5984/`.
 17:51:50.741 [main] DEBUG org.apache.http.headers - << Content-Type: text/plain; charset=utf-8
 17:51:50.741 [main] DEBUG org.apache.http.headers - << Content-Length: 87
 17:51:50.741 [main] DEBUG org.apache.http.headers - << Cache-Control: must-revalidate
-17:51:50.746 [main] DEBUG org.apache.http.headers - >> GET /db-def/f231e16d0b5958640dfac5059000a0fc HTTP/1.1
+17:51:50.746 [main] DEBUG org.apache.http.headers - >> GET /db-name/f231e16d0b5958640dfac5059000a0fc HTTP/1.1
 17:51:50.746 [main] DEBUG org.apache.http.headers - >> Via: 1.1 localhost (Apache-HttpClient/4.3 (cache))
 17:51:50.746 [main] DEBUG org.apache.http.headers - >> Host: localhost:5984
 17:51:50.746 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
@@ -35,7 +35,7 @@ Expects a CouchDB to be running at `http://localhost:5984/`.
 ````
 ./gradlew :httpclient-cache-4-4:performDemo
 
-17:51:58.401 [main] DEBUG org.apache.http.headers - >> HEAD /db-def/f231e16d0b5958640dfac5059000a947 HTTP/1.1
+17:51:58.401 [main] DEBUG org.apache.http.headers - >> HEAD /db-name/f231e16d0b5958640dfac5059000a947 HTTP/1.1
 17:51:58.401 [main] DEBUG org.apache.http.headers - >> Via: 1.1 localhost (Apache-HttpClient/4.4 (cache))
 17:51:58.401 [main] DEBUG org.apache.http.headers - >> Host: localhost:5984
 17:51:58.401 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
@@ -46,7 +46,7 @@ Expects a CouchDB to be running at `http://localhost:5984/`.
 17:51:58.405 [main] DEBUG org.apache.http.headers - << Content-Type: text/plain; charset=utf-8
 17:51:58.405 [main] DEBUG org.apache.http.headers - << Content-Length: 87
 17:51:58.405 [main] DEBUG org.apache.http.headers - << Cache-Control: must-revalidate
-17:51:58.412 [main] DEBUG org.apache.http.headers - >> GET /db-def/f231e16d0b5958640dfac5059000a947 HTTP/1.1
+17:51:58.412 [main] DEBUG org.apache.http.headers - >> GET /db-name/f231e16d0b5958640dfac5059000a947 HTTP/1.1
 17:51:58.412 [main] DEBUG org.apache.http.headers - >> Via: 1.1 localhost (Apache-HttpClient/4.4 (cache))
 17:51:58.412 [main] DEBUG org.apache.http.headers - >> If-None-Match: "1-967a00dff5e02add41819138abb3284d"
 17:51:58.412 [main] DEBUG org.apache.http.headers - >> Cache-Control: max-age=0
@@ -79,7 +79,7 @@ Exception in thread "main" java.lang.NullPointerException
 ````
 ./gradlew :httpclient-cache-4-5:performDemo
 
-17:52:43.101 [main] DEBUG org.apache.http.headers - >> HEAD /db-def/f231e16d0b5958640dfac5059000b0b1 HTTP/1.1
+17:52:43.101 [main] DEBUG org.apache.http.headers - >> HEAD /db-name/f231e16d0b5958640dfac5059000b0b1 HTTP/1.1
 17:52:43.101 [main] DEBUG org.apache.http.headers - >> Via: 1.1 localhost (Apache-HttpClient/4.5 (cache))
 17:52:43.101 [main] DEBUG org.apache.http.headers - >> Host: localhost:5984
 17:52:43.101 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
@@ -90,7 +90,7 @@ Exception in thread "main" java.lang.NullPointerException
 17:52:43.104 [main] DEBUG org.apache.http.headers - << Content-Type: text/plain; charset=utf-8
 17:52:43.105 [main] DEBUG org.apache.http.headers - << Content-Length: 87
 17:52:43.105 [main] DEBUG org.apache.http.headers - << Cache-Control: must-revalidate
-17:52:43.115 [main] DEBUG org.apache.http.headers - >> GET /db-def/f231e16d0b5958640dfac5059000b0b1 HTTP/1.1
+17:52:43.115 [main] DEBUG org.apache.http.headers - >> GET /db-name/f231e16d0b5958640dfac5059000b0b1 HTTP/1.1
 17:52:43.115 [main] DEBUG org.apache.http.headers - >> Via: 1.1 localhost (Apache-HttpClient/4.5 (cache))
 17:52:43.115 [main] DEBUG org.apache.http.headers - >> If-None-Match: "1-967a00dff5e02add41819138abb3284d"
 17:52:43.115 [main] DEBUG org.apache.http.headers - >> Cache-Control: max-age=0
