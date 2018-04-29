@@ -18,7 +18,9 @@ Example of a downstream library stumbling over the issue is the Java API for Cou
 
 A possible fix can be found at [github.com/gesellix/httpcomponents-client//disable-cache-for-null-resource](https://github.com/gesellix/httpcomponents-client/tree/disable-cache-for-null-resource).
 
-Mailing list entry [@httpclient-users.hc.apache.org](https://lists.apache.org/thread.html/8cb4252482565e0f6d59b097320cfbf572c212508b63e9fc59a2e1b4@%3Chttpclient-users.hc.apache.org%3E).
+- Mailing list entry [@httpclient-users.hc.apache.org](https://lists.apache.org/thread.html/8cb4252482565e0f6d59b097320cfbf572c212508b63e9fc59a2e1b4@%3Chttpclient-users.hc.apache.org%3E)
+- GitHub PR [#101](https://github.com/apache/httpcomponents-client/pull/101)
+- JIRA issue [HTTPCLIENT-1920](https://issues.apache.org/jira/browse/HTTPCLIENT-1920)
 
 ## Demo time
 

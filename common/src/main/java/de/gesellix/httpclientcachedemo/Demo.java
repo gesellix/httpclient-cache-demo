@@ -22,6 +22,10 @@ public class Demo {
     if (!db.contains(doc.getId())) {
       throw new IllegalStateException("doc should have been created: " + doc.getId());
     }
+
+    // should update the cache entry
+    db.get(doc.getId());
+    // should be cached (server might respond with status code 304)
     db.get(doc.getId());
   }
 
