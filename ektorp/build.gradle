@@ -1,8 +1,9 @@
 dependencies {
-  compile("org.apache.httpcomponents:httpclient-cache:4.3")
+  compile "org.ektorp:org.ektorp:1.5.0"
+
+//  compile("org.apache.httpcomponents:httpclient-cache:4.3")
 //  compile("org.apache.httpcomponents:httpclient-cache:4.4")
 //  compile("org.apache.httpcomponents:httpclient-cache:4.5")
-  compile("org.apache.httpcomponents.client5:httpclient5-cache:5.0-beta1")
 
   compile "org.slf4j:slf4j-api:1.7.25"
   runtime "org.slf4j:jcl-over-slf4j:1.7.25"

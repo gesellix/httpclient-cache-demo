@@ -12,10 +12,20 @@ subprojects {
 
 ext {
   testprojects = []
+  mainClassByProject = [:]
+}
+
+project(':ektorp') {
+//  testprojects << it
+  mainClassByProject[it] = 'de.gesellix.httpclientcachedemo.EktorpDemo'
+  dependencies {
+    compile("org.apache.httpcomponents:httpclient-cache:4.3")
+  }
 }
 
 project(':httpclient-cache-4-3') {
   testprojects << it
+  mainClassByProject[it] = 'de.gesellix.httpclientcachedemo.Demo4x'
   dependencies {
     compile("org.apache.httpcomponents:httpclient-cache:4.3")
   }
@@ -23,6 +33,7 @@ project(':httpclient-cache-4-3') {
 
 project(':httpclient-cache-4-4') {
   testprojects << it
+  mainClassByProject[it] = 'de.gesellix.httpclientcachedemo.Demo4x'
   dependencies {
     compile("org.apache.httpcomponents:httpclient-cache:4.4")
   }
@@ -30,8 +41,17 @@ project(':httpclient-cache-4-4') {
 
 project(':httpclient-cache-4-5') {
   testprojects << it
+  mainClassByProject[it] = 'de.gesellix.httpclientcachedemo.Demo4x'
   dependencies {
     compile("org.apache.httpcomponents:httpclient-cache:4.5")
+  }
+}
+
+project(':httpclient-cache-5-0') {
+  testprojects << it
+  mainClassByProject[it] = 'de.gesellix.httpclientcachedemo.Demo5x'
+  dependencies {
+    compile("org.apache.httpcomponents.client5:httpclient5-cache:5.0-beta1")
   }
 }
 
@@ -42,7 +62,7 @@ configure(testprojects) { p ->
   task performDemo(type: JavaExec) {
     def clientSourceSets = p.sourceSets
     classpath = clientSourceSets.main.runtimeClasspath + clientSourceSets.test.runtimeClasspath
-    main = 'de.gesellix.httpclientcachedemo.Demo'
+    main = mainClassByProject[p]
   }
 //  check.dependsOn performDemo
 }

@@ -1,6 +1,8 @@
 rootProject.name = 'httpclient-cache-demo'
 
 include 'common'
+include 'ektorp'
 include 'httpclient-cache-4-3'
 include 'httpclient-cache-4-4'
 include 'httpclient-cache-4-5'
+include 'httpclient-cache-5-0'

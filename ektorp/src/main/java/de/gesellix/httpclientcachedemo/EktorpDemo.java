@@ -6,14 +6,14 @@ import org.ektorp.http.StdHttpClient;
 import org.ektorp.impl.StdCouchDbConnector;
 import org.ektorp.impl.StdCouchDbInstance;
 
-public class Demo {
+public class EktorpDemo {
 
   public static void main(String[] args) throws Exception {
-    new Demo().doIt(args);
+    new EktorpDemo().doIt(args);
   }
 
   public void doIt(String[] args) throws Exception {
-    String tag = args == null || args.length == 0 ? "name" : args[0];
+    String tag = args == null || args.length == 0 ? "default" : args[0];
 
     CouchDbRepository db = getCouchDbRepository("http://localhost:5984", tag);
 

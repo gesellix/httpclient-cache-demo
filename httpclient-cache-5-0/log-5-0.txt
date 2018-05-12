@@ -1,0 +1,70 @@
+17:48:08.290 [main] INFO  d.g.httpclientcachedemo.Demo5x - >> *** 1
+17:48:08.311 [main] DEBUG o.a.h.c.h.i.c.CacheableRequestPolicy - Request is serveable from cache
+17:48:08.312 [main] DEBUG o.a.h.c.h.impl.cache.BasicHttpCache - Get cache entry: http://localhost:8000; HEAD /example-5.0 HTTP/1.1
+17:48:08.319 [main] DEBUG o.a.h.c.http.impl.cache.CachingExec - Cache miss
+17:48:08.320 [main] DEBUG o.a.h.c.h.impl.cache.BasicHttpCache - Get variant cache entries: http://localhost:8000; HEAD /example-5.0 HTTP/1.1
+17:48:08.320 [main] DEBUG o.a.h.c.http.impl.cache.CachingExec - Calling the backend
+17:48:08.323 [main] DEBUG o.a.h.c.h.protocol.RequestAddCookies - CookieSpec selected: default
+17:48:08.332 [main] DEBUG o.a.h.c.h.protocol.RequestAuthCache - Auth cache not set in the context
+17:48:08.382 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "HEAD /example-5.0 HTTP/1.1[\r][\n]"
+17:48:08.382 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Accept-Encoding: deflate, gzip, x-gzip[\r][\n]"
+17:48:08.382 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Via: 1.1 localhost (Apache-HttpClient/5.0-beta1 (cache))[\r][\n]"
+17:48:08.382 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Host: localhost:8000[\r][\n]"
+17:48:08.382 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+17:48:08.382 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/5.0-beta1 (Java/1.8.0_102)[\r][\n]"
+17:48:08.382 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "[\r][\n]"
+17:48:08.389 [Thread-2] INFO  d.g.httpclientcachedemo.DemoHandler - HEAD /example-5.0
+17:48:08.400 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+17:48:08.400 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Server: Yet Another Example[\r][\n]"
+17:48:08.400 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Date: Sat, 12 May 2018 15:48:08 GMT[\r][\n]"
+17:48:08.400 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Etag: 12345678[\r][\n]"
+17:48:08.400 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-length: 7[\r][\n]"
+17:48:08.400 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Cache-control: must-revalidate[\r][\n]"
+17:48:08.400 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[\r][\n]"
+17:48:08.413 [main] DEBUG o.a.h.c.h.impl.cache.BasicHttpCache - Flush cache entries invalidated by exchange: http://localhost:8000; HEAD /example-5.0 HTTP/1.1 -> HTTP/1.1 200 OK
+17:48:08.415 [main] DEBUG o.a.h.c.http.impl.cache.CachingExec - Caching backend response
+17:48:08.415 [main] DEBUG o.a.h.c.h.impl.cache.BasicHttpCache - Get cache entry: http://localhost:8000; HEAD /example-5.0 HTTP/1.1
+17:48:08.415 [main] DEBUG o.a.h.c.h.impl.cache.BasicHttpCache - Create cache entry: http://localhost:8000; HEAD /example-5.0 HTTP/1.1
+17:48:08.419 [main] DEBUG o.a.h.c.http.impl.cache.CachingExec - Backend response successfully cached
+17:48:08.424 [main] INFO  d.g.httpclientcachedemo.Demo5x - << *** 1: null
+17:48:08.424 [main] INFO  d.g.httpclientcachedemo.Demo5x - >> *** 2
+17:48:08.425 [main] DEBUG o.a.h.c.h.i.c.CacheableRequestPolicy - Request is serveable from cache
+17:48:08.425 [main] DEBUG o.a.h.c.h.impl.cache.BasicHttpCache - Get cache entry: http://localhost:8000; GET /example-5.0 HTTP/1.1
+17:48:08.425 [main] DEBUG o.a.h.c.h.i.c.CachedResponseSuitabilityChecker - Cache entry is not fresh enough
+17:48:08.429 [main] DEBUG o.a.h.c.http.impl.cache.CachingExec - Revalidating cache entry
+17:48:08.430 [main] DEBUG o.a.h.c.h.protocol.RequestAddCookies - CookieSpec selected: default
+17:48:08.430 [main] DEBUG o.a.h.c.h.protocol.RequestAuthCache - Auth cache not set in the context
+17:48:08.430 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "GET /example-5.0 HTTP/1.1[\r][\n]"
+17:48:08.430 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "If-None-Match: 12345678[\r][\n]"
+17:48:08.430 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Cache-Control: max-age=0[\r][\n]"
+17:48:08.430 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Host: localhost:8000[\r][\n]"
+17:48:08.430 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+17:48:08.431 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/5.0-beta1 (Java/1.8.0_102)[\r][\n]"
+17:48:08.431 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "[\r][\n]"
+17:48:08.432 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "end of stream"
+17:48:08.441 [main] INFO  d.g.httpclientcachedemo.Demo5x - << *** 2: Gateway Timeout
+17:48:08.441 [main] INFO  d.g.httpclientcachedemo.Demo5x - >> *** 3
+17:48:08.442 [main] DEBUG o.a.h.c.h.i.c.CacheableRequestPolicy - Request is serveable from cache
+17:48:08.442 [main] DEBUG o.a.h.c.h.impl.cache.BasicHttpCache - Get cache entry: http://localhost:8000; GET /example-5.0 HTTP/1.1
+17:48:08.445 [main] DEBUG o.a.h.c.h.i.c.CachedResponseSuitabilityChecker - Cache entry is not fresh enough
+17:48:08.445 [main] DEBUG o.a.h.c.http.impl.cache.CachingExec - Revalidating cache entry
+17:48:08.446 [main] DEBUG o.a.h.c.h.protocol.RequestAddCookies - CookieSpec selected: default
+17:48:08.446 [main] DEBUG o.a.h.c.h.protocol.RequestAuthCache - Auth cache not set in the context
+17:48:08.447 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "GET /example-5.0 HTTP/1.1[\r][\n]"
+17:48:08.447 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "If-None-Match: 12345678[\r][\n]"
+17:48:08.447 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Cache-Control: max-age=0[\r][\n]"
+17:48:08.447 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Host: localhost:8000[\r][\n]"
+17:48:08.447 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Connection: keep-alive[\r][\n]"
+17:48:08.448 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/5.0-beta1 (Java/1.8.0_102)[\r][\n]"
+17:48:08.448 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "[\r][\n]"
+17:48:08.448 [Thread-2] INFO  d.g.httpclientcachedemo.DemoHandler - GET /example-5.0
+17:48:08.448 [Thread-2] INFO  d.g.httpclientcachedemo.DemoHandler - cached!
+17:48:08.450 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "HTTP/1.1 304 Not Modified[\r][\n]"
+17:48:08.450 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Server: Yet Another Example[\r][\n]"
+17:48:08.451 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Date: Sat, 12 May 2018 15:48:08 GMT[\r][\n]"
+17:48:08.451 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Etag: 12345678[\r][\n]"
+17:48:08.451 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Content-length: 0[\r][\n]"
+17:48:08.451 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Cache-control: must-revalidate[\r][\n]"
+17:48:08.451 [main] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "[\r][\n]"
+17:48:08.452 [main] DEBUG o.a.h.c.h.impl.cache.BasicHttpCache - Update cache entry: http://localhost:8000; GET /example-5.0 HTTP/1.1
+17:48:08.456 [main] WARN  d.g.httpclientcachedemo.Demo5x - << *** 3 response body expected (?), but was empty!
